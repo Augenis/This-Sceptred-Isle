@@ -1,0 +1,204 @@
+﻿### Try to keep tags in alphabetical order if it's not too far gone, please.
+
+OCC = { # The United Kingdom
+	dynamic_country_name = {
+		name = dyn_c_occ_united_kingdom
+		adjective = dyn_c_occ_united_kingdom_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = { country_has_primary_culture = cu:catalan }
+		}
+	}
+}
+NSF = { # North Sea Empire
+	dynamic_country_name = {
+		name = dyn_c_north_sea_empire
+		adjective = dyn_c_north_sea_empire_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+}
+MUG = { # Alshaebian Caliphate
+	dynamic_country_name = {
+		name = dyn_c_alshaebian_caliphate
+		adjective = dyn_c_alshaebian_caliphate_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+}
+SAF = { # South Africa
+	dynamic_country_name = {
+		name = dyn_c_south_africa
+		adjective = dyn_c_south_africa_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:OCC
+			c:OCC = {
+				has_diplomatic_pact = {
+					who = c:SAF
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+CHI = { # China
+	dynamic_country_name = {
+		name = dyn_c_great_xu
+		adjective = dyn_c_great_xu_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				country_has_primary_culture = cu:tibetan
+			}
+		}
+	}
+}
+MCH = { # China
+	dynamic_country_name = {
+		name = dyn_c_nurgan
+		adjective = dyn_c_nurgan_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:CHI
+			c:CHI = {
+				has_diplomatic_pact = {
+					who = c:MCH
+					type = vassal
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+FRA = { # France
+	dynamic_country_name = {
+		name = dyn_c_french_circle
+		adjective = dyn_c_french_circle_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:GER
+			c:GER = {
+				has_diplomatic_pact = {
+					who = c:FRA
+					type = personal_union
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+NVS = { # South Africa
+	dynamic_country_name = {
+		name = dyn_c_brytisk_avalon
+		adjective = dyn_c_brytisk_avalon_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				OR = {
+					has_diplomatic_pact = {
+						who = c:NVS
+						type = puppet
+						is_initiator = yes
+					}
+					has_diplomatic_pact = {
+						who = c:NVS
+						type = personal_union
+						is_initiator = yes
+					}
+					has_diplomatic_pact = {
+						who = c:NVS
+						type = dominion
+						is_initiator = yes
+					}
+				}
+			}
+		}
+	}
+}
+MLY = { # South Africa
+	dynamic_country_name = {
+		name = dyn_c_gauhar_department
+		adjective = dyn_c_gauhar_department_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:PHI
+			c:PHI = {
+				OR = {
+					has_diplomatic_pact = {
+						who = c:MLY
+						type = puppet
+						is_initiator = yes
+					}
+					has_diplomatic_pact = {
+						who = c:MLY
+						type = dominion
+						is_initiator = yes
+					}
+				}
+			}
+		}
+	}
+}
+KUR = { # Kurdish Frontier
+	dynamic_country_name = {
+		name = dyn_c_kurdish_frontier
+		adjective = dyn_c_kurdish_frontier_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:MUG
+			c:MUG = {
+				OR = {
+					has_diplomatic_pact = {
+						who = c:KUR
+						type = tributary
+						is_initiator = yes
+					}
+					has_diplomatic_pact = {
+						who = c:KUR
+						type = vassal
+						is_initiator = yes
+					}
+				}
+			}
+		}
+	}
+}
