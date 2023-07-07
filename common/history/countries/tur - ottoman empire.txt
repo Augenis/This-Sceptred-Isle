@@ -1,0 +1,29 @@
+﻿COUNTRIES = {
+	c:TUR = {
+		effect_starting_technology_tier_4_tech = yes
+		trigger_event = { 
+			id = tsi_events.1
+		}
+		effect_starting_politics_traditional = yes
+		
+		set_tax_level = medium
+		
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting 
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_land_based_taxation	
+		activate_law = law_type:law_slave_trade	
+
+		ig:ig_landowners = { # Mehmed Emin Rauf Pasha was Grand Vizier in 1836
+			add_ruling_interest_group = yes
+			add_ideology = ideology_pious
+		}
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_sunni_madrasahs
+		}
+	}
+}

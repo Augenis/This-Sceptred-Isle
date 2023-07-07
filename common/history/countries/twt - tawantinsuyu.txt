@@ -1,0 +1,43 @@
+﻿COUNTRIES = {
+	c:TWT = {	
+		effect_starting_technology_tier_3_tech = yes
+		trigger_event = { 
+			id = tsi_events.1
+		}
+		effect_starting_politics_conservative = yes
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_per_capita_based_taxation	
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_propertied_women
+
+		set_institution_investment_level = {
+			institution = institution_health_system
+			level = 2
+		}
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+		
+		ig:ig_devout = { 
+			set_interest_group_name = ig_inti_priesthood
+		}
+		
+		ig:ig_landowners = {
+			set_interest_group_name = ig_incas
+			add_ideology = ideology_pious
+		}
+		add_modifier = {
+			name = age_of_caudillos_modifier
+			months = very_long_modifier_time
+			is_decaying = yes
+		}
+	}
+}

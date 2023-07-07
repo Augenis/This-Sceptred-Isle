@@ -1,0 +1,10 @@
+﻿COUNTRIES = {
+	c:YAK = {
+		effect_starting_technology_tier_7_tech = yes
+		trigger_event = { 
+			id = tsi_events.1
+		}
+		effect_starting_politics_traditional = yes		
+		effect_native_conscription_3 = yes	
+	}
+}
