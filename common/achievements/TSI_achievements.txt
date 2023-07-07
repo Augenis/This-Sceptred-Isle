@@ -1,0 +1,153 @@
+﻿# possible - filters out achivements on game start so we dont have to check everything all the time
+# happened - checks if achivement happened
+
+aeiou = {
+	possible = {
+	}
+	happened = {
+		exists = c:GBR
+		this = c:GBR
+		c:GBR = {
+			owns_entire_state_region = STATE_ILE_DE_FRANCE
+			owns_entire_state_region = STATE_EASTERN_NORWAY
+			owns_entire_state_region = STATE_LEINSTER
+			owns_entire_state_region = STATE_ARMAGNAC			
+		}
+	}
+}
+german_century = {
+	possible = {
+	}
+	happened = {
+		exists = c:GER
+		this = c:GER
+		or = {
+			NOT = { 
+				c:GBR = {
+					is_country_alive = yes
+				}
+			}
+			c:GBR = { 
+				country_rank < rank_value:major_power 
+			}
+		}
+		or = {
+			NOT = { 
+				c:OCC = {
+					is_country_alive = yes
+				}
+			}
+			c:OCC = { 
+				country_rank < rank_value:major_power 
+			}
+		}
+		or = {
+			NOT = { 
+				c:UKR = {
+					is_country_alive = yes
+				}
+			}
+			c:UKR = { 
+				country_rank < rank_value:major_power 
+			}
+		}
+	}
+}
+
+illuminate_the_world = {
+	possible = {
+	}
+	happened = {
+		exists = c:GRE
+		this = c:GRE
+		c:GRE ={
+			has_global_highest_gdp = yes
+			institution_investment_level = {
+				institution = institution_schools
+				value = 5
+			}			
+		}
+	}
+}
+
+jihad = { 
+	possible = {
+
+	}
+	happened = {
+		exists = c:MUG
+		this = c:MUG
+		c:MUG = {
+			owns_entire_state_region = STATE_LATIUM
+			any_scope_state = {
+				state_in_europe = yes
+				is_split_state = no
+				count >= 20
+			}
+		}
+	}
+}
+
+eden_in_the_new_world = { 
+	possible = {
+
+	}
+	happened = {
+		exists = c:ARG
+		this = c:ARG
+		c:ARG = {
+			any_scope_state = {
+				state_in_south_america = yes
+				is_split_state = no
+				count >= 53
+			}
+		}
+	}
+}
+
+finish_the_rivalry = { 
+	possible = {
+
+	}
+	happened = {
+		exists = c:SWE
+		this = c:SWE
+		c:GBR = {
+			is_subject_of = c:SWE
+		}
+	}
+}
+
+turning_the_tables = { 
+	possible = {
+
+	}
+	happened = {
+		exists = c:OCC
+		this = c:OCC
+		religion = rel:protestant
+		c:OCC = {
+			s:STATE_ILE_DE_FRANCE = {
+				exists = region_state:OCC
+				region_state:OCC = {
+					is_split_state = no
+					NOT = {
+						any_scope_pop = {
+							religion = rel:catholic
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+liberty_or_death = { 
+	possible = {
+		has_variable = liberty_or_death_ach_possible
+	}
+	happened = {
+		exists = c:USA
+		this = c:USA
+	}
+}
