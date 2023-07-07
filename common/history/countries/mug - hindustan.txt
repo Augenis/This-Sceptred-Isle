@@ -1,0 +1,30 @@
+﻿COUNTRIES = {
+	c:MUG = {
+		effect_starting_technology_tier_4_tech = yes
+		trigger_event = { 
+			id = tsi_events.1
+		}
+		effect_starting_politics_traditional = yes		
+
+		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_religious_schools
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 1
+		}
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_naqshbandi_order
+			add_ideology = ideology_jingoist
+			add_ruling_interest_group = yes
+		}
+		ig:ig_armed_forces = {
+			set_interest_group_name = ig_nawsratheeri 
+			add_ruling_interest_group = yes
+			set_ig_bolstering = yes
+		}
+	}
+}

@@ -1,0 +1,14 @@
+﻿COUNTRIES = {
+	c:HUN = {
+		effect_starting_technology_tier_3_tech = yes
+		trigger_event = { 
+			id = tsi_events.1
+		}
+		
+		effect_starting_politics_traditional = yes
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_catholic_church
+		}
+	}
+}

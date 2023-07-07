@@ -1,0 +1,26 @@
+﻿COUNTRIES = {
+	c:COR = {
+
+		effect_starting_technology_tier_3_tech = yes
+		trigger_event = { 
+			id = tsi_events.1
+		}
+		effect_starting_politics_liberal = yes
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_religious_schools
+		
+		set_tax_level = medium
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 1
+		}	
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_catholic_church
+		}
+
+	}
+}

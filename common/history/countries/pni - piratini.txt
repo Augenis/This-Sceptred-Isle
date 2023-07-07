@@ -1,0 +1,25 @@
+﻿COUNTRIES = {
+	c:PNI = {
+		trigger_event = { 
+			id = tsi_events.1
+		}
+		
+		effect_starting_technology_tier_2_tech = yes
+
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_per_capita_based_taxation
+		activatE_law = law_type:law_censorship
+		
+		set_tariffs_import_priority = g:artillery
+		set_tariffs_import_priority = g:small_arms	
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_evangelical_church
+		}
+	}
+}

@@ -1,0 +1,24 @@
+﻿COUNTRIES = {
+	c:NSE = {
+		effect_starting_technology_tier_3_tech = yes
+		trigger_event = { 
+			id = tsi_events.1
+		}
+		effect_starting_politics_conservative = yes
+
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_legacy_slavery
+
+		
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_evangelical_church
+		}
+	}
+}

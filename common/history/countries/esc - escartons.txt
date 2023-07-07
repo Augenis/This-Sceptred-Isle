@@ -1,0 +1,24 @@
+﻿COUNTRIES = {
+	c:ESC = {
+		effect_starting_technology_tier_2_tech = yes
+		trigger_event = { 
+			id = tsi_events.1
+		}
+		
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_women_own_property
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_catholic_church
+		}
+	}
+}

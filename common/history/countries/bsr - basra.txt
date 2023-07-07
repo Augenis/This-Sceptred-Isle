@@ -1,0 +1,14 @@
+﻿COUNTRIES = {
+	c:BSR = {
+		effect_starting_technology_tier_4_tech = yes
+		trigger_event = { 
+			id = tsi_events.1
+		}
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_slave_trade
+
+		ig:ig_devout = { 
+			set_interest_group_name = ig_sunni_madrasahs 
+		}	
+	}
+}
