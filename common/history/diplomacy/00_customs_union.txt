@@ -1,0 +1,46 @@
+﻿DIPLOMACY = {
+	# Zollverein
+	c:GER = {
+		create_diplomatic_pact = {
+			country = c:NET	
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:SCH
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:PLC
+			type = customs_union
+		}
+	}
+	# Brytisk sphere - Norway, Saint-Malo,
+	c:GBR = {	
+		create_diplomatic_pact = {
+			country = c:NOR	
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:STM
+			type = customs_union
+		}
+	}
+	# Occitania and Andalusia are friends
+	c:OCC = {	
+		create_diplomatic_pact = {
+			country = c:ANL	
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:ESC	
+			type = customs_union
+		}
+	}
+	# Keme and Levant are friends
+	c:EGY = {	
+		create_diplomatic_pact = {
+			country = c:PAL	
+			type = customs_union
+		}
+	}
+}

@@ -1,0 +1,30 @@
+﻿DIPLOMACY = {
+	c:OCC = {
+		create_diplomatic_pact = {
+			country = c:ANL
+			type = defensive_pact
+		}	
+	}	
+	c:EGY = {
+		create_diplomatic_pact = {
+			country = c:PAL
+			type = defensive_pact
+		}	
+	}
+	c:RUS = {
+		create_diplomatic_pact = {
+			country = c:UKR
+			type = defensive_pact
+		}	
+	}
+	c:OCC = {
+		create_diplomatic_pact = {
+			country = c:GBR
+			type = alliance
+		}	
+		create_diplomatic_pact = {
+			country = c:ESC
+			type = defensive_pact
+		}
+	}	
+}

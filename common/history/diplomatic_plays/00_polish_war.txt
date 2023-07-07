@@ -1,0 +1,22 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:UKR = {
+		create_diplomatic_play = {
+			name = polish_war
+		
+			target_state = s:STATE_EAST_GALICIA.region_state:PLC
+			
+			type = dp_conquer_state
+			
+			add_war_goal = {
+				holder = c:UKR
+				type = make_puppet
+				target_country = c:PLC
+			}
+			add_war_goal = {
+				holder = c:PLC
+				type = war_reparations
+				target_country = c:UKR
+			}			
+		}	
+	}
+}

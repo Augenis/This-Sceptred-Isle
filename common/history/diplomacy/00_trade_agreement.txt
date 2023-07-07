@@ -1,0 +1,14 @@
+﻿DIPLOMACY = {
+	c:SWE = {
+		create_diplomatic_pact = {
+			country = c:GER
+			type = trade_agreement
+		}
+	}	
+	c:GER = {
+		create_diplomatic_pact = {
+			country = c:NET
+			type = trade_agreement
+		}
+	}	
+}

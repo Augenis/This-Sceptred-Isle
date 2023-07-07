@@ -1,0 +1,10 @@
+﻿
+
+DIPLOMACY = {
+	c:SIA= {
+		create_truce = {
+			country = c:DAI
+			months = 36
+		}
+	}	
+}

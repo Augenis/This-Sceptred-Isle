@@ -1,0 +1,331 @@
+﻿DIPLOMACY = {
+	c:SPA = {	
+		# Iberian Sumatra - Annexed in 1835
+		#create_diplomatic_pact = {
+		#	country = c:DEI
+		#	type = dominion
+		#}
+		# Iberian Malaya
+		#create_diplomatic_pact = {
+		#	country = c:MLY
+		#	type = dominion
+		#}
+		# Antillia
+		create_diplomatic_pact = {
+			country = c:CSA
+			type = puppet
+		}
+	}
+	c:PAR = {
+		create_diplomatic_pact = {
+			country = c:COR
+			type = protectorate
+		}	
+	}
+	c:GER = {
+		#create_diplomatic_pact = {
+		#	country = c:BOH
+		#	type = puppet
+		#}
+		create_diplomatic_pact = {
+			country = c:SWI
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:VEN
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:SIC
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:LOM
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:MOD
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:FRA
+			type = personal_union
+		}
+	}	
+	c:SIB = {
+		create_diplomatic_pact = {
+			country = c:DAU
+			type = puppet
+		}			
+	}
+	c:UKR = {
+		create_diplomatic_pact = {
+			country = c:GEO
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:ARM
+			type = protectorate
+		}		
+	}	
+	c:CHI = {
+		create_diplomatic_pact = {
+			country = c:MGL
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:MCH
+			type = vassal
+		}
+		# Kazuto are Xu-aligned. 
+		create_diplomatic_pact = {
+			country = c:JAP
+			type = tributary
+		}		
+	}
+	c:USA = {
+		create_diplomatic_pact = {
+			country = c:SEQ
+			type = puppet
+		}
+	}
+	c:SWE = {
+		create_diplomatic_pact = {
+			country = c:FRS
+			type = puppet
+		}
+		#create_diplomatic_pact = {
+		#	country = c:PNI
+		#	type = puppet
+		#}
+		create_diplomatic_pact = {
+			country = c:NSE
+			type = puppet
+		}
+	}
+	c:OCC = {
+		create_diplomatic_pact = {
+			country = c:SAF
+			type = puppet
+		}
+		### AUSTRALIA ###
+		# Colony of New South Wales
+		create_diplomatic_pact = {
+			country = c:NSW
+			type = puppet
+		}
+		# Colony of Tasmania, historically called Van Dieman's Land until 1856
+		create_diplomatic_pact = {
+			country = c:TAS
+			type = puppet
+		}
+		# United Tribes of New Zealand
+		create_diplomatic_pact = {
+			country = c:UNT
+			type = protectorate
+		}
+	}
+	c:GBR = {
+		create_diplomatic_pact = {
+			country = c:PHI # The Osbaldines
+			type = dominion
+		}	
+
+		### OH CANADA ###
+		# Avalon
+		create_diplomatic_pact = {
+			country = c:NVS
+			type = personal_union
+		}
+		# Wealdholm actually belongs to Avalon, but it breaks if Avalon holds it.
+		create_diplomatic_pact = {
+			country = c:NEW
+			type = puppet
+		}
+	}
+	c:KOR = {
+		create_diplomatic_pact = {
+			country = c:ORG
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:ITR
+			type = tributary
+		}
+	}
+	c:DAI = {
+		create_diplomatic_pact = {
+			country = c:CHP
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:CAM
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:CMI
+			type = vassal
+		}		
+	}
+	c:EGY = {
+		# fmr. Iberian India
+		create_diplomatic_pact = {
+			country = c:BIC
+			type = dominion
+		}
+	}
+	c:BIC = {
+		create_diplomatic_pact = {
+			country = c:MYS
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:TRA
+			type = puppet
+		}		
+	}
+	c:MUG = {
+		create_diplomatic_pact = {
+			country = c:HYD
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:ANR
+			type = vassal
+		}	
+		create_diplomatic_pact = {
+			country = c:KHR
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:ARB
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:IAJ
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:AZB
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:FAR
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:AZE
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:ERZ
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:KUR
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:BUK
+			type = tributary
+		}		
+		create_diplomatic_pact = {
+			country = c:KHI
+			type = tributary
+		}		
+		create_diplomatic_pact = {
+			country = c:KOK
+			type = tributary
+		}		
+	}	
+	c:PHI = {
+		create_diplomatic_pact = {
+			country = c:YOG
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:SRK
+			type = puppet
+		}	
+		create_diplomatic_pact = {
+			country = c:SMB
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:BLG
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:BRU
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:TID
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:MAD
+			type = puppet
+		}
+		# Sumatrans
+		create_diplomatic_pact = {
+			country = c:ACE
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:SAK
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:JMB
+			type = puppet
+		}
+		# Perak, taken from Spanish Malaya
+		create_diplomatic_pact = {
+			country = c:PRK
+			type = puppet
+		}
+	}
+	c:IRE = {
+		# Mosquito Kingdom
+		create_diplomatic_pact = {
+			country = c:MKT
+			type = protectorate
+		}
+	}
+	c:MOR = {
+		# Bindudetama
+		create_diplomatic_pact = {
+			country = c:BIN
+			type = personal_union
+		}
+		# Tunis, ruled by Uthman Ali
+		create_diplomatic_pact = {
+			country = c:TUN
+			type = puppet
+		}
+	}
+	c:MAL = {
+		# Mali influence sphere
+		create_diplomatic_pact = {
+			country = c:ASH
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:DAH
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:HAU
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:OYO
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:BEN
+			type = tributary
+		}
+	}
+}

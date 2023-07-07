@@ -1,0 +1,263 @@
+﻿POPS = {
+	s:STATE_SAN_SALVADOR = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 428204
+			}
+		}
+	}
+	s:STATE_GUATEMALA = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 164404
+			}
+			create_pop = {
+				culture = mayan
+				size = 312000
+			}
+		}
+	}
+	s:STATE_HONDURAS = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 385204
+			}
+			create_pop = {
+				culture = miskito # Cape of Gracias a Dios Miskito
+				size = 3000
+			}
+		}
+	}
+	s:STATE_NICARAGUA = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 284000
+			}
+			create_pop = {
+				culture = miskito # Miskito pop. across the 'borders'
+				size = 4000
+			}
+		}
+		region_state:MKT = {
+			create_pop = {
+				culture = miskito # Tawira Miskito
+				size = 30000
+			}
+			create_pop = {
+				culture = miskito
+				religion = catholic
+				size = 10000
+			}
+			create_pop = {
+				culture = afro_american # Miskito Sambu
+				size = 20000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 500
+			}
+			create_pop = {
+				culture = irish
+				size = 500
+			}
+		}
+	}
+	s:STATE_COSTA_RICA = {
+		region_state:CLM = {
+			create_pop = {
+				culture = north_andean
+				size = 83992
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_brazilian
+				size = 10100
+			}
+			create_pop = {
+				culture = afro_brazilian
+				size = 4500
+			}
+		}
+	}
+	s:STATE_PANAMA = {
+		region_state:CLM = {
+			create_pop = {
+				culture = north_andean
+				size = 87792
+			}
+			create_pop = {
+				culture = afro_brazilian
+				size = 28300
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_brazilian
+				size = 14100
+			}
+			create_pop = {
+				culture = cariban
+				size = 8000
+			}
+		}
+	}
+	s:STATE_HAITI = {
+		region_state:VNZ = {
+			create_pop = {
+				culture = afro_brazilian
+				size = 176808
+				pop_type = slaves
+			}
+			create_pop = {
+				culture = afro_brazilian
+				size = 116808
+			}
+			create_pop = {
+				culture = north_andean
+				size = 40000
+			}
+			create_pop = {
+				culture = north_andean
+				size = 40000
+			}
+		}
+	}
+	s:STATE_SANTO_DOMINGO = {
+		region_state:VNZ = {
+			create_pop = {
+				culture = afro_brazilian
+				size = 106020
+				pop_type = slaves
+			}
+			create_pop = {
+				culture = afro_brazilian
+				size = 126020
+			}
+			create_pop = {
+				culture = north_andean
+				size = 24000
+			}
+			create_pop = {
+				culture = north_andean
+				size = 20000
+			}
+		}
+	}
+	s:STATE_PUERTO_RICO = {
+		region_state:VNZ = {
+			create_pop = {
+				culture = north_andean
+				size = 182500
+			}
+			create_pop = {
+				culture = afro_brazilian
+				size = 168400
+			}
+			create_pop = {
+				culture = dixie
+				size = 5904
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_brazilian
+				size = 42000
+			}		
+		}
+	}
+	s:STATE_BAHAMAS = {
+		region_state:GBR = {
+			create_pop = {
+				culture = british
+				size = 9800
+			}
+			create_pop = {
+				culture = french
+				size = 21200
+			}
+			create_pop = {
+				culture = afro_american
+				size = 100400
+			}
+		}
+	}
+	s:STATE_WEST_INDIES = {
+		region_state:VNZ = {
+			create_pop = {
+				culture = north_andean
+				size = 22200
+			}
+			create_pop = {
+				culture = afro_brazilian
+				size = 216104
+				pop_type = slaves
+			}
+			create_pop = {
+				culture = north_andean
+				size = 3992
+			}
+			create_pop = {
+				culture = afro_brazilian
+				size = 39996
+			}
+			create_pop = {
+				culture = north_andean
+				size = 34704
+			}
+			create_pop = {
+				culture = afro_brazilian
+				size = 144768
+			}
+			create_pop = {
+				culture = afro_brazilian
+				size = 90500
+				pop_type = slaves
+			}
+			create_pop = {
+				culture = dutch
+				size = 396
+			}
+		}
+	}
+	s:STATE_JAMAICA = {
+		region_state:CSA = {
+			create_pop = {
+				culture = afro_caribeno
+				size = 101000
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 258596
+				pop_type = slaves
+			}
+			create_pop = {
+				culture = dixie
+				size = 23040
+			}
+		}
+	}
+	s:STATE_CUBA = {
+		region_state:CUB = {
+			# 896400
+			create_pop = {
+				culture = yankee
+				size = 461304 # est. "white" population in 1836 of 483308, minus the explicit Spanish pops below
+			}
+			create_pop = {
+				culture = afro_american
+				size = 52011
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 388786
+			}			
+			create_pop = {
+				culture = british
+				size = 22004
+			}
+		}
+	}
+}
