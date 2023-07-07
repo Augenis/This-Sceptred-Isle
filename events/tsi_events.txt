@@ -1,0 +1,879 @@
+﻿namespace = tsi_events
+
+# Intro event
+tsi_events.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = tsi_events.1.t
+	desc = tsi_events.1.d
+	flavor = tsi_events.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_factory_opening.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/factory_opening"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	trigger = {
+		NOT = { has_variable = introduction_event }
+	}
+
+	immediate = {
+		set_variable = introduction_event
+	}
+
+	option = { 
+		name = tsi_events.1.a
+		if = {
+			limit = {
+				c:GBR = ROOT
+			}
+			trigger_event = { id = tsi_events.2 }
+		}
+		else_if = {
+			limit = {
+				country_is_in_europe = yes
+			}
+			trigger_event = { id = tsi_events.3 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					country_is_in_central_asia = yes
+					country_is_in_india = yes
+					country_is_in_east_asia = yes
+					country_is_in_southeast_asia = yes
+					country_is_in_middle_east = yes
+				}
+			}
+			trigger_event = { id = tsi_events.4 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					country_is_in_north_america = yes
+					country_is_in_central_america = yes
+				}
+			}
+			trigger_event = { id = tsi_events.5 }
+		}
+		else_if = {
+			limit = {
+				country_is_in_south_america = yes
+			}
+			trigger_event = { id = tsi_events.6 }
+		}
+		else_if = {
+			limit = {
+				country_is_in_africa = yes
+			}
+			trigger_event = { id = tsi_events.7 }
+		}
+		else = {
+			trigger_event = { id = tsi_events.3 }
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					this = c:GBR
+				}
+				every_country = {
+					limit = {
+						NOT = { this = ROOT }
+						is_player = yes
+					}
+					trigger_event = { id = tsi_events.1 }
+				}
+			}
+		}
+	}
+	option = { 
+		name = tsi_events.1.b
+		default_option = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					this = c:GBR
+				}
+				every_country = {
+					limit = {
+						NOT = { this = ROOT }
+						is_player = yes
+					}
+					trigger_event = { id = tsi_events.1 }
+				}
+			}
+		}
+	}
+}
+tsi_events.2 = { # Intro - Bryten
+	type = country_event
+	placement = ROOT
+
+	title = tsi_events.2.t
+	desc = tsi_events.2.d
+	flavor = tsi_events.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	trigger = {
+		#triggered by JE
+	}
+
+	option = { 
+		name = tsi_events.1.b
+		default_option = yes
+		if = {
+			limit = {
+				has_interest_marker_in_region = region_poland
+			}
+			trigger_event = { id = tsi_events.8 }
+		}
+	}
+}
+tsi_events.3 = { # Intro - Europe
+	type = country_event
+	placement = ROOT
+
+	title = tsi_events.3.t
+	desc = tsi_events.3.d
+	flavor = tsi_events.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	trigger = {
+		#triggered by JE
+	}
+
+	option = { 
+		name = tsi_events.1.b
+		default_option = yes
+		if = {
+			limit = {
+				has_interest_marker_in_region = region_poland
+			}
+			trigger_event = { id = tsi_events.8 }
+		}
+	}
+}
+tsi_events.4 = { # Intro - Asia
+	type = country_event
+	placement = ROOT
+
+	title = tsi_events.4.t
+	desc = tsi_events.4.d
+	flavor = tsi_events.4.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/asia_westerners_arriving.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/westeners_arriving_in_east_asia"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	trigger = {
+		#triggered by JE
+	}
+
+	option = { 
+		name = tsi_events.1.b
+		default_option = yes
+		if = {
+			limit = {
+				has_interest_marker_in_region = region_poland
+			}
+			trigger_event = { id = tsi_events.8 }
+		}
+	}
+}
+tsi_events.5 = { # Intro - Avalon
+	type = country_event
+	placement = ROOT
+
+	title = tsi_events.5.t
+	desc = tsi_events.5.d
+	flavor = tsi_events.5.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_before_the_battle.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/before_the_battle"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	trigger = {
+		#triggered by JE
+	}
+
+	option = { 
+		name = tsi_events.1.b
+		default_option = yes
+		
+	}
+}
+tsi_events.6 = { # Intro - Brasil
+	type = country_event
+	placement = ROOT
+
+	title = tsi_events.6.t
+	desc = tsi_events.6.d
+	flavor = tsi_events.6.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_gold_prospectors.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/gold_prospectors"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	trigger = {
+		#triggered by JE
+	}
+
+	option = { 
+		name = tsi_events.1.b
+		default_option = yes
+		
+	}
+}
+tsi_events.7 = { # Intro - Africa
+	type = country_event
+	placement = ROOT
+
+	title = tsi_events.7.t
+	desc = tsi_events.7.d
+	flavor = tsi_events.7.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/africa_city_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/city_center"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	trigger = {
+		#triggered by JE
+	}
+
+	option = { 
+		name = tsi_events.1.b
+		default_option = yes
+		
+	}
+}
+tsi_events.8 = { # Intro - The Polish War
+	type = country_event
+	placement = ROOT
+
+	title = tsi_events.8.t
+	desc = tsi_events.8.d
+	flavor = tsi_events.8.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_before_the_battle.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/before_the_battle"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	trigger = {
+		#triggered by JE
+	}
+
+	option = { 
+		name = tsi_events.8.a
+		default_option = yes
+		
+	}
+}
+# Iroquoian Removal - removed for now. 
+tsi_events.9 = {
+	type = country_event
+	placement = scope:indian_removal_state
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_native_american.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/native_american"
+
+	title = tsi_events.9.t
+	desc = tsi_events.9.d
+	flavor = tsi_events.9.f
+
+	duration = 3
+	
+	trigger = {
+
+	}
+
+	immediate = {
+		
+	}
+	
+	option = { # use force
+		name = tsi_events.9.a
+		default_option = yes
+		s:STATE_MICHIGAN = {
+			every_scope_pop = {
+				limit = {
+					OR = {
+						culture = cu:iroquoian
+						culture = cu:algonquian
+						culture = cu:siouan
+					}
+				}
+				move_pop = s:STATE_WISCONSIN
+			}
+			remove_homeland = iroquoian
+			remove_homeland = algonquian
+		}
+		s:STATE_WISCONSIN = {
+			add_homeland = iroquoian
+		}
+		set_variable = iroquois_expelled
+	}
+}
+
+# Unification of the East Slavs
+tsi_events.10 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+
+	title = tsi_events.10.t
+	desc = tsi_events.10.d
+	flavor = tsi_events.10.f
+
+	duration = 3
+	
+	trigger = {
+		
+	}
+	
+	option = { # Nice
+		name = tsi_events.10.a
+		add_loyalists = {
+			value = 0.1
+			culture = cu:ukrainian
+		}
+		add_loyalists = {
+			value = 0.1
+			culture = cu:russian
+		}
+		add_loyalists = {
+			value = 0.1
+			culture = cu:byelorussian
+		}
+	}
+}
+# Unification of Avalon
+tsi_events.11 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+
+	title = tsi_events.11.t
+	desc = tsi_events.11.d
+	flavor = tsi_events.11.f
+
+	duration = 3
+	
+	trigger = {
+		
+	}
+	
+	option = { # Nice
+		name = tsi_events.11.a
+		add_loyalists = {
+			value = 0.1
+			culture = cu:yankee
+		}
+		add_loyalists = {
+			value = 0.1
+			culture = cu:anglo_canadian
+		}
+	}
+}
+# Popular Elections Act
+tsi_events.12 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	title = tsi_events.12.t
+	desc = tsi_events.12.d
+	flavor = tsi_events.12.f
+
+	duration = 3
+	
+	trigger = {
+		
+	}
+	
+	option = { # Nice
+		name = tsi_events.12.a
+		add_loyalists = {
+			value = 0.1
+			culture = cu:british
+		}
+	}
+}
+# Popular Elections Act
+tsi_events.13 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	title = tsi_events.13.t
+	desc = tsi_events.13.d
+	flavor = tsi_events.13.f
+
+	duration = 3
+	
+	trigger = {
+		
+	}
+	
+	option = { # Nice
+		name = tsi_events.13.a
+		ig:ig_intelligentsia = {
+			add_modifier = {
+				name = popular_elections_act_fail
+				months = normal_modifier_time
+			}
+		}
+		ig:ig_landowners = {
+			add_modifier = {
+				name = popular_elections_act_fail
+				months = normal_modifier_time
+			}
+		}
+	}
+}
+# Colonization of Avalon
+tsi_events.14 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+
+	title = tsi_events.14.t
+	desc = tsi_events.14.d
+	flavor = tsi_events.14.f
+
+	duration = 3
+	
+	trigger = {
+		
+	}
+	
+	option = { # Nice
+		name = tsi_events.14.a
+		add_modifier = {
+			name = avalon_colonization
+			months = very_long_modifier_time
+		}
+	}
+}
+# France becomes free
+tsi_events.15 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	title = tsi_events.15.t
+	desc = tsi_events.15.d
+	flavor = tsi_events.15.f
+
+	duration = 3
+	
+	trigger = {
+		
+	}
+	
+	option = { # Nice
+		name = tsi_events.15.a
+		c:FRA = {
+			make_independent = yes
+			trigger_event = { id = tsi_events.16 } 
+		}
+	}
+}
+# France becomes free
+tsi_events.16 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	title = tsi_events.16.t
+	desc = tsi_events.16.d
+	flavor = tsi_events.16.f
+
+	duration = 3
+	
+	trigger = {
+		
+	}
+	
+	option = { # Nice
+		name = tsi_events.16.a
+		create_character = {
+			first_name = "Harald"
+			last_name = "Tostig-Bourbon"
+			culture = cu:british
+			ruler = yes
+			noble = yes
+			birth_date = 1790.3.21
+			interest_group = ig_industrialists
+			traits = {
+			}
+		}
+		ig:ig_landowners = { 
+			add_ruling_interest_group = yes
+		}
+		ig:ig_devout = { 
+			add_ruling_interest_group = yes
+		}
+	}
+}
+# France remains a puppet
+tsi_events.17 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	title = tsi_events.17.t
+	desc = tsi_events.17.d
+	flavor = tsi_events.17.f
+
+	duration = 3
+	
+	trigger = {
+		
+	}
+	
+	option = { # Nice
+		name = tsi_events.17.a
+		add_radicals = {
+			culture = cu:french
+			value = 0.2
+		}
+		c:FRA = {
+			change_subject_type = subject_type_puppet
+			trigger_event = { id = tsi_events.18 } 
+		}
+	}
+}
+# France becomes a puppet
+tsi_events.18 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	title = tsi_events.18.t
+	desc = tsi_events.18.d
+	flavor = tsi_events.18.f
+
+	duration = 3
+	
+	trigger = {
+		
+	}
+	
+	option = { # Nice
+		name = tsi_events.18.a
+		add_radicals = {
+			culture = cu:french
+			value = 0.2
+		}
+		create_character = {
+			first_name = "Karl"
+			last_name = "von_Staufer_Daiz"
+			culture = cu:south_german
+			ruler = yes
+			noble = yes
+			birth_date = 1790.3.21
+			interest_group = ig_landowners
+			traits = {
+			}
+		}
+		c:GBR = {
+			trigger_event = { id = tsi_events.19 } 
+		}
+		c:OCC = {
+			trigger_event = { id = tsi_events.20 } 
+		}
+	}
+}
+# France remains a puppet
+tsi_events.19 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	title = tsi_events.19.t
+	desc = tsi_events.19.d
+	flavor = tsi_events.19.f
+
+	duration = 3
+	
+	trigger = {
+		
+	}
+	
+	option = { # Nice
+		name = tsi_events.19.a
+		change_relations = {
+			country = c:GER
+			value = -30
+		}
+	}
+}
+# France remains a puppet (OCC)
+tsi_events.20 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	title = tsi_events.20.t
+	desc = tsi_events.20.d
+	flavor = tsi_events.20.f
+
+	duration = 3
+	
+	trigger = {
+		
+	}
+	
+	option = { # Nice
+		name = tsi_events.20.a
+		default_option = yes
+		change_relations = {
+			country = c:GER
+			value = -50
+		}
+		create_diplomatic_play = {
+			target_country = c:FRA
+			type = dp_transfer_subject
+
+			add_war_goal = {
+				holder = c:GER
+				type = humiliation
+				target_country = c:OCC
+			}
+		}
+		hidden_effect = {
+			change_relations = {
+				country = c:GBR
+				value = 50
+			}
+			change_relations = {
+				country = c:UKR
+				value = 50
+			}
+			c:GER = {
+				trigger_event = { id = tsi_events.21 } 
+			}
+		}
+	}
+	option = { # Nice
+		name = tsi_events.20.b
+		change_relations = {
+			country = c:GER
+			value = -50
+		}
+		add_radicals = {
+			culture = cu:french
+			value = 0.2
+		}
+	}
+}
+tsi_events.21 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_before_the_battle.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/before_the_battle"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = tsi_events.21.t
+	desc = tsi_events.21.d
+	flavor = tsi_events.21.f
+
+	duration = 3
+	
+	trigger = {
+		
+	}
+	
+	option = { # Nice
+		name = tsi_events.21.a
+		
+	}
+}
+# Removal of Alshaebian Bureaucracy
+tsi_events.22 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+
+	title = tsi_events.22.t
+	desc = tsi_events.22.d
+	flavor = tsi_events.22.f
+
+	duration = 3
+	
+	trigger = {
+		country_has_primary_culture = cu:pashtun
+		NOT = {
+			OR = {
+				THIS = c:MUG
+				is_subject_of = c:MUG
+			}
+		}
+	}
+	
+	option = { # Nice
+		name = tsi_events.22.a
+		remove_primary_culture = cu:pashtun
+		add_radicals = {
+			culture = cu:pashtun
+			value = 0.5
+		}
+	}
+}
