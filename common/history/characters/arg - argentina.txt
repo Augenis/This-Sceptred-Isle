@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:ARG = {
+		create_character = {
+			first_name = Harald
+			last_name = Brygestowe
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1787.9.28
+			interest_group = ig_intelligentsia
+			ideology = ideology_moderate
+			traits = {
+				ambitious
+			}
+		}
+	}
+}

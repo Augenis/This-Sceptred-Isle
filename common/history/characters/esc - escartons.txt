@@ -1,0 +1,22 @@
+﻿CHARACTERS = {
+	c:ESC = {
+		create_character = {
+			first_name = Bastienne
+			last_name = Borel
+			ruler = yes
+			female = yes
+			noble = yes
+			birth_date = 1772.5.10
+			culture = cu:occitan
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				romantic
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

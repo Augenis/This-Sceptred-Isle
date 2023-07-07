@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:NET = {
+		create_character = {
+			first_name = Klaas
+			last_name = Zijlstra
+			ruler = yes
+			#ig_leader = yes
+			birth_date = 1795.7.6
+			culture = cu:dutch
+			interest_group = ig_armed_forces
+			ideology = ideology_reformer
+			traits = {
+				
+			}
+		}	
+
+	}
+}

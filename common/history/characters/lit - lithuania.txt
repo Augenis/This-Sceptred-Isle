@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:LIT = {
+		create_character = {
+			first_name = Geraldas
+			last_name = Ozys
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1785.10.11
+			culture = cu:lithuanian
+			interest_group = ig_rural_folk
+			ideology = ideology_reformer
+			traits = {
+				ambitious
+			}
+		}	
+
+	}
+}

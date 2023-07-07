@@ -1,0 +1,21 @@
+﻿CHARACTERS = {
+	c:DAU = {
+		create_character = {
+			first_name = Lavrentiy
+			last_name = Lunin
+			ruler = yes
+			noble = yes
+			birth_date = 1795.2.10
+			culture = cu:ukrainian
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

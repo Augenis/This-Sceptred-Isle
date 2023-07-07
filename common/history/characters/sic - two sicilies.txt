@@ -1,0 +1,21 @@
+﻿CHARACTERS = {
+	c:SIC = {
+		create_character = {
+			first_name = Ferdinando
+			last_name = Sanseverino
+			ruler = yes
+			noble = yes
+			birth_date = 1795.3.29
+			culture = cu:south_italian
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

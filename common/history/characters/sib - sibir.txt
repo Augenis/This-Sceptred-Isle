@@ -1,0 +1,21 @@
+﻿CHARACTERS = {
+	c:SIB = {
+		create_character = {
+			first_name = Vladimir
+			last_name = Klymenko
+			ruler = yes
+			noble = yes
+			birth_date = 1770.2.10
+			culture = cu:ukrainian
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				reserved
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

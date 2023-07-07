@@ -1,0 +1,21 @@
+﻿CHARACTERS = {
+	c:SPA = {
+		create_character = {
+			first_name = Juan
+			last_name = de_Ivrea
+			ruler = yes
+			noble = yes
+			birth_date = 1791.2.25
+			culture = cu:spanish
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				arrogant
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

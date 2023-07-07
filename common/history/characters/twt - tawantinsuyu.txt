@@ -1,0 +1,21 @@
+﻿CHARACTERS = {
+	c:TWT = {
+		create_character = {
+			first_name = Hakanchaska
+			last_name = Manco_Tupac
+			ruler = yes
+			noble = yes
+			birth_date = 1786.3.25
+			culture = cu:quechua
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = {
+				romantic
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

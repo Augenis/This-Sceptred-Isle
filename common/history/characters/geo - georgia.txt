@@ -1,0 +1,20 @@
+﻿CHARACTERS = {
+	c:GEO = {
+		create_character = {
+			first_name = "Alexandre"
+			last_name = "Bagrationi"
+			ruler = yes
+			noble = yes
+			birth_date = 1775.3.26
+			culture = cu:georgian
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

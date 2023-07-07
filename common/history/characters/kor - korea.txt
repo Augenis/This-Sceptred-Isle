@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:KOR = {
+		create_character = {
+			first_name = "Hwan_bok"
+			last_name = "Kang"
+			ruler = yes
+			birth_date = 1785.2.2
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				reserved
+			}
+		}	
+	}
+}
+

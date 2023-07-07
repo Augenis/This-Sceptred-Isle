@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:BIC = {
+		create_character = {
+			first_name = Omar
+			last_name = Zaghloul
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1780.2.13
+			culture = cu:misri
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				bigoted
+			}
+		}	
+
+	}
+}

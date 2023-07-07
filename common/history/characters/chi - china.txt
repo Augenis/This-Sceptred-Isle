@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:CHI = {
+		create_character = {
+			# The Daoguang Emperor
+			first_name = Tiankong
+			last_name = "Rinpungpa" # Not used by the emperor himself but there's got to be something here
+			ruler = yes
+			birth_date = 1779.10.11
+			culture = cu:tibetan
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				ambitious
+			}
+		}
+	}
+}

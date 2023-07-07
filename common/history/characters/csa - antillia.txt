@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:CSA = {
+		create_character = {
+			first_name = Peres
+			last_name = de_Foncipal
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1795.7.6
+			culture = cu:spanish
+			interest_group = ig_landowners
+			ideology = ideology_slaver
+			traits = {
+				
+			}
+		}	
+
+	}
+}

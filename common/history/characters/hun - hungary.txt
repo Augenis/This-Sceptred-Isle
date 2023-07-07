@@ -1,0 +1,21 @@
+﻿CHARACTERS = {
+	c:HUN = {
+		create_character = {
+			first_name = Janos
+			last_name = Orsini_Rosenberg
+			ruler = yes
+			noble = yes
+			birth_date = 1779.1.20
+			culture = cu:south_german
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				brave
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

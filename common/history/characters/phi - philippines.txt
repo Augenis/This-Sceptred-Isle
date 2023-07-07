@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:PHI = {
+		create_character = {
+			first_name = Malcolm_Eriksson
+			last_name = McIntyre
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1800.2.4
+			culture = cu:scottish
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = {
+			}
+		}	
+
+	}
+}

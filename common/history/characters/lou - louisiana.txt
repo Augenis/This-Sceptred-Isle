@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:LOU = {
+		create_character = {
+			first_name = Jacob
+			last_name = van_der_Velden
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1780.3.3
+			culture = cu:cajun
+			interest_group = ig_landowners
+			ideology = ideology_slaver
+			traits = {
+				
+			}
+		}	
+
+	}
+}

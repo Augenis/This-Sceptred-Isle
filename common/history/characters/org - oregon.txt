@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:ORG = {
+		create_character = {
+			first_name = Yi
+			last_name = Seon
+			age = 49
+			culture = cu:korean
+			ruler = yes
+			ig_leader = yes
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				tactful
+			}
+		}
+	}
+}

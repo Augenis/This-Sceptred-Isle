@@ -1,0 +1,20 @@
+﻿CHARACTERS = {
+	c:PAL = {
+		create_character = {
+			first_name = "Luis"
+			last_name = "de_Brienne"
+			ruler = yes
+			noble = yes
+			birth_date = 1795.10.11
+			culture = cu:levantine
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

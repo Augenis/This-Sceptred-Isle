@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:ONT = {
+		create_character = {
+			first_name = Cadwallader
+			last_name = Kristiansson
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1780.2.13
+			culture = cu:yankee
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist
+			traits = {
+				ambitious
+			}
+		}	
+
+	}
+}

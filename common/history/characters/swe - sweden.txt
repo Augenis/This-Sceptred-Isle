@@ -1,0 +1,19 @@
+﻿CHARACTERS = {
+	c:SWE = {
+		create_character = {
+			first_name = Karl
+			last_name = Rosen_von_Rosenstein
+			ruler = yes
+			noble = yes
+			ig_leader = yes
+			birth_date = 1791.2.2
+			culture = cu:swedish
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				
+			}
+		}	
+
+	}
+}

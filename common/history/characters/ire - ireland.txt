@@ -1,0 +1,22 @@
+﻿CHARACTERS = {
+	c:IRE = {
+		create_character = {
+			first_name = Aisling
+			last_name = de_Courcy
+			ruler = yes
+			female = yes
+			noble = yes
+			birth_date = 1802.11.5
+			culture = cu:irish
+			interest_group = ig_intelligentsia
+			ideology = ideology_moderate
+			traits = {
+				reserved
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

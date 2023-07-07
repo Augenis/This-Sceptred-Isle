@@ -1,0 +1,19 @@
+﻿CHARACTERS = {
+	c:PLC = {
+		create_character = {
+			first_name = Wenceslaus
+			last_name = Khilkov
+			ruler = yes
+			noble = yes
+			birth_date = 1815.7.5
+			culture = cu:polish
+			religion = catholic
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				ambitious
+			}
+		}	
+
+	}
+}

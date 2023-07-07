@@ -1,0 +1,20 @@
+﻿CHARACTERS = {
+	c:CYP = {
+		create_character = {
+			first_name = "Konstantinos"
+			last_name = "Tou_Loichtenperk"
+			ruler = yes
+			noble = yes
+			birth_date = 1811.4.29
+			culture = cu:greek
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:CLM = {
+		create_character = {
+			first_name = "Gustaaf"
+			last_name = "Wolterbeek"
+			ruler = yes
+			ig_leader = yes
+			age = 45
+			interest_group = ig_rural_folk
+			ideology = ideology_moderate
+			traits = {
+				
+			}
+		}	
+	}
+}

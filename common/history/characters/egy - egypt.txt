@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:EGY = {
+		create_character = {
+			first_name = Seth
+			last_name = Hardrada
+			ruler = yes
+			noble = yes
+			birth_date = 1801.10.10
+			culture = cu:anglo_egyptian
+			interest_group = ig_intelligentsia
+			ideology = ideology_moderate
+			traits = {
+				pious
+			}
+		}	
+
+	}
+}

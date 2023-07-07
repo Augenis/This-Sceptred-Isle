@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:CUB = {
+		create_character = {
+			first_name = "Aelfin"
+			last_name = "Ryding"
+			ruler = yes
+			ig_leader = yes
+			age = 55
+			interest_group = ig_landowners
+			ideology = ideology_slaver
+			traits = {
+				cruel
+			}
+		}	
+	}
+}

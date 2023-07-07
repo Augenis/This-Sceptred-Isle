@@ -1,0 +1,98 @@
+﻿CHARACTERS = {
+	c:GBR = {
+		create_character = {
+			first_name = "Brutus"
+			last_name = "Tostig-Bourbon"
+			ruler = yes
+			noble = yes
+			birth_date = 1778.9.31
+			dna = dna_emperor_brutus
+			culture = cu:british
+			interest_group = ig_industrialists
+			ideology = ideology_reformer
+			traits = {
+				ambitious
+				innovative
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+		
+		create_character = {
+			first_name = "Osbald"
+			last_name = "Tostig-Bourbon"
+			heir = yes
+			age = 25
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			traits = {
+				
+			}
+		}
+
+		create_character = {
+			first_name = Francis
+			last_name = Lockrona_Taylor
+			age = 42
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_radical
+			traits = {
+				ambitious
+			}
+		}
+
+		create_character = {
+			first_name = Morgan
+			last_name = Blood
+			age = 56
+			ig_leader = yes
+			interest_group = ig_devout
+			ideology = ideology_traditionalist
+			traits = {
+				meticulous
+				arrogant
+			}
+		}
+
+		create_character = {
+			first_name = Edgar
+			last_name = Edmundson
+			age = 51
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_market_liberal
+			traits = {
+				meticulous
+			}
+		}
+
+		create_character = {
+			first_name = Diederich_Johann
+			last_name = Fjetherstain
+			culture = cu:scottish
+			birth_date = 1777.2.11
+			ig_leader = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				pious
+			}
+		}
+
+		create_character = {
+			first_name = Johann_Christian
+			last_name = Stanleigh
+			age = 38
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_traditionalist
+			traits = {
+				experienced_political_operator
+			}
+		}
+
+	}
+}

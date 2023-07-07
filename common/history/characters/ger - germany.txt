@@ -1,0 +1,20 @@
+﻿CHARACTERS = {
+	c:GER = {
+		create_character = {
+			first_name = Frederick
+			last_name = Richter
+			ruler = yes
+			birth_date = 1797.2.15
+			culture = cu:north_german
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = {
+				tactful
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

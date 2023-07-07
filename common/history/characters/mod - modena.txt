@@ -1,0 +1,21 @@
+﻿CHARACTERS = {
+	c:MOD = {
+		create_character = {
+			first_name = Durante
+			last_name = Beriallante
+			ruler = yes
+			noble = yes
+			birth_date = 1806.12.28
+			culture = cu:north_italian
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			traits = {
+				ambitious
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

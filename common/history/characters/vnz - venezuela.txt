@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:VNZ = {
+		create_character = {
+			first_name = "Willem"
+			last_name = "Cleerens"
+			ruler = yes
+			ig_leader = yes
+			age = 49
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				
+			}
+		}	
+	}
+}

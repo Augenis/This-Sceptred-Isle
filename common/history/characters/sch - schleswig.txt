@@ -1,0 +1,20 @@
+﻿CHARACTERS = {
+	c:SCH = {
+		create_character = {
+			first_name = Wilhelm
+			last_name = Gorz
+			ruler = yes
+			noble = yes
+			birth_date = 1805.3.21
+			culture = cu:north_german
+			interest_group = ig_devout
+			ideology = ideology_moderate
+			traits = {
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

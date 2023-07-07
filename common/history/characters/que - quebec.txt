@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:QUE = {
+		create_character = {
+			first_name = Edmund
+			last_name = Morgenstierne
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1781.9.25
+			culture = cu:anglo_canadian
+			interest_group = ig_rural_folk
+			ideology = ideology_moderate
+			traits = {
+			}
+		}	
+
+	}
+}

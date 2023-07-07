@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:PNI = {
+		create_character = {
+			first_name = Gustav
+			last_name = Fredriksson
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1791.2.2
+			culture = cu:new_swedish
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				
+			}
+		}	
+
+	}
+}

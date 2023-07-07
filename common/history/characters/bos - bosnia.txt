@@ -1,0 +1,20 @@
+﻿CHARACTERS = {
+	c:BOS = {
+		create_character = {
+			first_name = "Pavle"
+			last_name = "Plamenac"
+			ruler = yes
+			noble = yes
+			birth_date = 1769.10.12
+			culture = cu:bosniak
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

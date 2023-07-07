@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:MUG = {
+		create_character = {
+			first_name = Rusul_Akram
+			last_name = Sayyid
+			ruler = yes
+			noble = yes
+			birth_date = 1782.4.10
+			culture = cu:pashtun
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			traits = {
+				pious
+			}
+		}	
+
+	}
+}

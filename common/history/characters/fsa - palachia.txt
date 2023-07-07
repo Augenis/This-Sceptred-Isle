@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:FSA = {
+		create_character = {
+			first_name = Willem
+			last_name = Vorster
+			ruler = yes
+			#ig_leader = yes
+			birth_date = 1780.2.13
+			culture = cu:yankee
+			interest_group = ig_armed_forces
+			ideology = ideology_radical
+			traits = {
+				bigoted
+			}
+		}	
+
+	}
+}

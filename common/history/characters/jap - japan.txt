@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:JAP = {
+
+		create_character = {
+			ruler = yes
+			first_name = Nobuyuki
+			last_name = Kazuto
+			birth_date = 1785.12.7
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+			}
+		}
+
+	}
+}

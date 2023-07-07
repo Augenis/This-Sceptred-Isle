@@ -1,0 +1,21 @@
+﻿CHARACTERS = {
+	c:PAR = {
+		create_character = {
+			first_name = Guillaume
+			last_name = Manzolillo
+			ruler = yes
+			noble = yes
+			birth_date = 1780.10.10
+			culture = cu:south_italian
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

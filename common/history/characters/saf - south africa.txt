@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:SAF = {
+		create_character = {
+			first_name = "Olivier"
+			last_name = "de_Camelat"
+			ruler = yes
+			noble = yes
+			age = 49
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			ig_leader = yes
+			traits = {
+				cruel
+			}		
+		}
+	}
+}

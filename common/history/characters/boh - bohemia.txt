@@ -1,0 +1,21 @@
+﻿CHARACTERS = {
+	c:BOH = {
+		create_character = {
+			first_name = Adolfus
+			last_name = von_Galen
+			ruler = yes
+			noble = yes
+			birth_date = 1776.9.19
+			culture = cu:north_german
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				brave
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}

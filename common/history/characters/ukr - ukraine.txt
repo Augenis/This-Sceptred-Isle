@@ -1,0 +1,31 @@
+﻿CHARACTERS = {
+	c:UKR = {
+		create_character = {
+			first_name = Artur
+			last_name = Khilkov
+			ruler = yes
+			noble = yes
+			birth_date = 1768.3.10
+			culture = cu:ukrainian
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				reserved
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+		create_character = {
+			first_name = "Stepan"
+			last_name = "Khilkov"
+			heir = yes
+			age = 31
+			interest_group = ig_armed_forces
+			ideology = ideology_reformer
+			traits = {
+				
+			}
+		}
+	}
+}

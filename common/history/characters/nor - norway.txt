@@ -1,0 +1,20 @@
+﻿CHARACTERS = {
+	c:NOR = {
+		create_character = {
+			first_name = Sven
+			last_name = "Tostig-Bourbon"
+			ruler = yes
+			noble = yes
+			birth_date = 1800.10.11
+			culture = cu:british
+			interest_group = ig_intelligentsia
+			ideology = ideology_reformer
+			traits = {
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+
+	}
+}
