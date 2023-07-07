@@ -1,0 +1,23 @@
+﻿je_fate_of_france = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	complete = {
+		c:FRA = { relations:root >= relations_threshold:amicable }
+	}
+
+	timeout = 1460 # 4 years
+
+	on_complete = {
+		trigger_event = { id = tsi_events.17 } 
+		custom_tooltip = tsi_entente_betrayal_tt
+	}
+
+	on_timeout = {
+		trigger_event = { id = tsi_events.15 } 
+		custom_tooltip = tsi_france_loss_tt
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}

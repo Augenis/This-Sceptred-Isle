@@ -1,0 +1,36 @@
+﻿je_avalon_colonization = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	is_shown_when_inactive = {
+		OR = {
+			country_is_in_north_america = yes
+			country_is_in_central_america = yes
+		}
+	}
+
+	possible = {
+		NOT = {
+			has_law = law_type:law_no_colonial_affairs
+		}
+	}
+
+	invalid = {
+		has_law = law_type:law_no_colonial_affairs
+	}
+
+	complete = {
+		bureaucracy > 150
+		institution_investment_level = {
+			institution = institution_colonial_affairs
+			value >= 2
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = tsi_events.14 } 
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}

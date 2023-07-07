@@ -1,0 +1,22 @@
+﻿je_iroquois_removal = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	
+	on_complete = {
+		custom_tooltip = {
+			text = iroquois_removal_end
+		}
+	}
+	
+	invalid = {
+		OR = { 
+			NOT = { owns_entire_state_region = STATE_MICHIGAN }
+			has_variable = iroquois_expelled
+		}
+	}
+	
+	weight = 200
+	
+	should_be_pinned_by_default = yes
+	
+	inheritable = no
+}

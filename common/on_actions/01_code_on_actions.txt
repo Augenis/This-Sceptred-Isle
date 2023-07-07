@@ -1,0 +1,6 @@
+﻿# For on_actions launched by the code itself.
+on_monthly_pulse_country = {
+	events = {
+		bic_breakup.1 # MUG subah states losing the Pashtun accepted culture.
+	}
+}

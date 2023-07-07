@@ -1,0 +1,3 @@
+colors = {	
+	quebec_blue = { 108  164  208 }		
+} 
